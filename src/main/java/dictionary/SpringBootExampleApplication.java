@@ -15,7 +15,7 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 @SpringBootApplication
 public class SpringBootExampleApplication {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("/home/michu/ITLab_SpringBasic/src/main/java/Beans.xml");
 		Dictionary dict = (Dictionary) context.getBean("dictionary");		
 		search(dict);
 	}
